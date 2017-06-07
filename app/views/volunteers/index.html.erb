@@ -26,6 +26,7 @@
         <td><%= volunteer.career %></td>
         <td><%= volunteer.fraternity %></td>
         <td><%= volunteer.current_rol %></td>
+        <td><%= image_tag volunteer.photo.present? ? volunteer.photo_url : 'volunteer_placeholder.png'  %></td>
         <td><%= link_to 'Show', volunteer %></td>
         <td><%= link_to 'Edit', edit_volunteer_path(volunteer) %></td>
         <td><%= link_to 'Destroy', volunteer, method: :delete, data: { confirm: 'Are you sure?' } %></td>

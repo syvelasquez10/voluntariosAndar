@@ -1,4 +1,4 @@
-<%= form_with(model: volunteer, local: true) do |form| %>
+<%= form_for volunteer, multipart: true do |form| %>
   <% if volunteer.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(volunteer.errors.count, "error") %> prohibited this volunteer from being saved:</h2>
@@ -45,6 +45,8 @@
     <%= form.label :current_rol %>
     <%= form.text_field :current_rol, id: :volunteer_current_rol %>
   </div>
+
+  <%= form.file_field :photo %>
 
   <div class="actions">
     <%= form.submit %>
