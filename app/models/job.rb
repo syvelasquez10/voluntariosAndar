@@ -1,6 +1,6 @@
 class Job < ApplicationRecord
   belongs_to :volunteer
-  has_one :role
+  belongs_to :role
 
   def validate_final_date
     if final_date < initial_date
