@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyString
+  maximum_work_hours: 1.5
+  minimum_work_hours: 1.5
+
+two:
+  title: MyString
+  description: MyString
+  maximum_work_hours: 1.5
+  minimum_work_hours: 1.5

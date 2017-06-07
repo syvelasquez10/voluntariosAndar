@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @volunteer.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @volunteer.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @volunteer.phone %>
+</p>
+
+<p>
+  <strong>Admission period:</strong>
+  <%= @volunteer.admission_period %>
+</p>
+
+<p>
+  <strong>Career:</strong>
+  <%= @volunteer.career %>
+</p>
+
+<p>
+  <strong>Fraternity:</strong>
+  <%= @volunteer.fraternity %>
+</p>
+
+<p>
+  <strong>Current rol:</strong>
+  <%= @volunteer.current_rol %>
+</p>
+
+<%= link_to 'Edit', edit_volunteer_path(@volunteer) %> |
+<%= link_to 'Back', volunteers_path %>

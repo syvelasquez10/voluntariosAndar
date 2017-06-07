@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @role.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @role.description %>
+</p>
+
+<p>
+  <strong>Maximum work hours:</strong>
+  <%= @role.maximum_work_hours %>
+</p>
+
+<p>
+  <strong>Minimum work hours:</strong>
+  <%= @role.minimum_work_hours %>
+</p>
+
+<%= link_to 'Edit', edit_role_path(@role) %> |
+<%= link_to 'Back', roles_path %>
