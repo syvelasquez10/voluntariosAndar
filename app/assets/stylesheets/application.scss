@@ -10,8 +10,6 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  */
-@import "bootstrap-sprockets";
-@import "bootstrap";
 @import "font-awesome";
 @import "/*";
 @import url('https://fonts.googleapis.com/css?family=Roboto');
@@ -39,4 +37,9 @@
 .azulAndar {
   background-color: rgb(23,73,88) !important;
   border-color: rgb(23,73,88) !important;
+  color: white !important;
+}
+
+.marginP {
+  margin: 10px;
 }

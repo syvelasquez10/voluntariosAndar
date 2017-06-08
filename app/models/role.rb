@@ -13,4 +13,8 @@ class Role < ApplicationRecord
       errors.add(:maximum_work_hours, "can't be greater than the number of maximum work hours")
     end
   end
+
+  def to_s
+    title
+  end
 end

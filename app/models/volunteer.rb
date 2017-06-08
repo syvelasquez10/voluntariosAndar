@@ -8,4 +8,8 @@ class Volunteer < ApplicationRecord
   validates :email, presence: true, uniqueness: true
   validates :admission_period, presence: true
   validates :career, presence: true
+
+  def to_s
+    name
+  end
 end

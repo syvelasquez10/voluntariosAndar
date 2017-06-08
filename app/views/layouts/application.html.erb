@@ -3,10 +3,10 @@
   <head>
     <title>VoluntariosAndar</title>
     <%= csrf_meta_tags %>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css" crossorigin="anonymous">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
   </head>
 
   <body>
@@ -17,18 +17,26 @@
       <div class="col-md-6">
         <div  class="logo" style="float: left">
             <a href="https://uniandes.edu.co/">
-              <%= image_tag 'uniandes.jpg', options={size:"200x75",alt:"Logo Uniandes"} %>
+              <%= image_tag 'uniandes.png', size: "200x70", alt: "Logo Uniandes" %>
             </a>
         </div>
       </div>
       <div class="col-md-6">
         <div class="logo" style="float: right">
             <a href="https://andar.uniandes.edu.co">
-              <%= image_tag 'andar.png', options={size:"200x75",alt:"Logo ANDAR"} %>
+              <%= image_tag 'andar.png', size: "200x75", alt: "Logo ANDAR" %>
             </a>
         </div>
       </div>
     </div>
+    <% if notice.present? %>
+        <div class="alert alert-info alert-dismissable fade in">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">
+            <%= fa_icon 'times-circle'%>
+          </a>
+          <p id="notice"><%= notice %></p>
+        </div>
+    <% end%>
       <%= yield %>
   </div>
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
