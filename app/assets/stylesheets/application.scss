@@ -14,3 +14,29 @@
 @import "bootstrap";
 @import "font-awesome";
 @import "/*";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo{
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+.centerImage {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.azulAndar {
+  background-color: rgb(23,73,88) !important;
+  border-color: rgb(23,73,88) !important;
+}
